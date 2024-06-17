@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisis de datos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1><center>Analisis de datos<center></h1><br></br>
+    <h2><u>6.1 Introduccion</u></h2>
+    <p>
+        En este análisis se han examinado un conjunto de variables para identificar patrones y relaciones importantes. Para garantizar la calidad de los datos y los resultados, se ha realizado un tratamiento exhaustivo de los datos, que incluye los siguientes pasos:<br><br>
+
+        En primer lugar, se mostrará de dónde se obtuvieron los datos recopilados para su posterior análisis. Luego, se presentarán los procesos seguidos para la limpieza y preparación de los datos, abordando la gestión de valores faltantes y valores atípicos. A continuación, se realizará un análisis univariado y multivariado de las variables a analizar, que incluyen país, edad, ingresos medios, precios de la vivienda, emigración y desempleo. Finalmente, se mostrarán los programas y herramientas utilizados para la visualización de tablas y gráficos.<br><br>
+    </p>
+    <h2><u>6.2 Analisis exploratorio & calidad de datos</u></h2>
+    <p>
+        Para este estudio de las dificultades económicas de los jóvenes, se han elegido las siguientes variables que consideramos más importantes y más susceptibles de influir en la economía de un joven:<br><br>
+
+        <strong>Edad</strong>: La edad es una variable cuantitativa, específicamente una variable numérica continua. En este caso, se ha tomado el rango de personas menores de 30 años, que es lo que se considera como jóvenes.<br><br>
+
+        <strong>País</strong>: El país es una variable cualitativa donde se han seleccionado los países España, Alemania, Suecia, Francia, Italia, Portugal, Suiza, Grecia y los Países Bajos. Estos países han sido elegidos para resumir las diferentes situaciones de los países de la UE y facilitar la visualización de los datos.<br><br>
+
+        <strong>Índice de precios de la vivienda</strong>: Es una variable cuantitativa continua que mide los cambios en los precios de las viviendas a lo largo del tiempo.<br><br>
+
+        <strong>Ingresos mensuales</strong>: Es una variable cuantitativa continua que implica una cantidad numérica medida en euros como la moneda global.<br><br>
+
+        <strong>Emigración</strong>: La emigración es un fenómeno demográfico y social que puede considerarse una variable socioeconómica que se clasifica como variable cualitativa nominal ("emigrante" o "no emigrante").<br><br>
+
+        <strong>Desempleo</strong>: El desempleo es una variable socioeconómica que se puede clasificar como variable cualitativa nominal ("desempleado" o "no desempleado").<br><br>
+
+        En primer lugar, se llevó a cabo una limpieza de datos donde se identificaron y corrigieron valores faltantes, inconsistencias y errores. Los datos faltantes fueron imputados y se eliminaron los duplicados. Luego, se utilizó la reducción de dimensionalidad para simplificar el conjunto de datos, preservando información crucial y mejorando la eficiencia del análisis. Este tratamiento de datos permite un análisis robusto y confiable, proporcionando resultados precisos y representativos.<br><br>
+    </p>
+    <h2>1. Análisis multivariado Emigración juvenil </h2>
+    <p>
+        Con los datos proporcionados, se realiza el análisis técnico sobre la emigración juvenil desde España en comparación con otros países seleccionados.<br><br>
+
+        <strong>Emigración Promedio</strong>: La emigración promedio desde España es de 405,588 personas por año. Esto indica que, en promedio, un número significativo de personas emigra anualmente desde España.<br><br>
+
+        <strong>Desviación Estándar</strong>: La desviación estándar de 139,045 sugiere que hay una considerable variabilidad en la cantidad de emigración desde España en diferentes años. Esto indica que los flujos migratorios pueden fluctuar ampliamente de un año a otro. Se ha marcado un problema dentro de la juventud española, como se observa en el gráfico (Figura 6.3.1).<br><br>
+
+        <strong>Rango Intercuartílico</strong>: El rango intercuartílico de 222,363 muestra la dispersión de los datos alrededor de la media. Un amplio rango intercuartílico sugiere una considerable variabilidad en los niveles de emigración, lo cual refuerza los datos y gráficos mencionados anteriormente.<br><br>
+
+        <strong>Corrimiento Estandarizado</strong>: Con un corrimiento estandarizado positivo de 1.4629, se puede inferir que la distribución de la emigración desde España está sesgada hacia la derecha. Esto indica que hay una tendencia hacia valores más altos de emigración, con una cola positiva en la distribución.<br><br>
+
+        <strong>Comparación con Otros Países</strong>: España muestra una emigración promedio más alta que la mayoría de los países seleccionados, superando a Francia, Italia, Grecia, Portugal y Suecia. Si bien la desviación estándar de España es relativamente alta, lo que sugiere una mayor variabilidad en comparación con países como Italia y Grecia, no alcanza los niveles de variabilidad observados en Alemania y los Países Bajos. El sesgo estandarizado positivo indica que la distribución de la emigración desde España está sesgada hacia valores más altos, a diferencia del sesgo negativo observado en países como Francia, Italia, Grecia y Alemania. En resumen, España muestra una emigración significativa con una tendencia hacia valores más altos, pero con cierta variabilidad interanual. Todos estos datos se pueden ver con más detalle en la tabla 6.3.1 del anexo.<br><br>
+
+        Artículos que respaldan el análisis:<br>
+        <a href='https://www.lavanguardia.com/economia/20231222/9468901/perdida-talento-emigracion-crece-40-respecto-covid.html'>https://www.lavanguardia.com/economia/20231222/9468901/perdida-talento-emigracion-crece-40-respecto-covid.html</a>,<br>
+        <a href='https://www.eleconomista.es/primer-empleo/noticias/7209274/12/15/El-82-de-los-jovenes-se-iria-a-trabajar-fuera-de-Espana-.html'>https://www.eleconomista.es/primer-empleo/noticias/7209274/12/15/El-82-de-los-jovenes-se-iria-a-trabajar-fuera-de-Espana-.html</a><br><br>
+        <img src="Picture3.png" class="center">
+        <h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            Figure 6.3.1</h3>
+    </p>
+    <h2>2. Análisis multivariado ingreso mensual </h2>
+    <p>
+        Para realizar un análisis técnico respecto al salario mensual en euros en España comparado con otros países, utilizando los datos proporcionados:<br><br>
+
+        <strong>Salario Mensual Promedio</strong>: El salario mensual promedio en España es de 1.342€ (Figura 6.3.2). Esto indica el valor típico que los trabajadores pueden esperar recibir cada mes en España. España tiene un salario mensual promedio más bajo en comparación con países como Francia y Alemania. Francia tiene un salario mensual promedio de 1.848,5€ y Alemania tiene un promedio de 1.778,25€. Esto sugiere que los trabajadores en Francia y Alemania tienden a ganar más en promedio que los de España.<br><br>
+
+        <strong>Desviación Estándar</strong>: La desviación estándar del salario mensual en España es aproximadamente de 151,042 euros. Esto muestra la dispersión de los salarios individuales alrededor del promedio. Una desviación estándar alta indica que los salarios individuales tienden a variar significativamente. La desviación estándar del salario mensual en España (151,042 euros) es más baja en comparación con países como Alemania (363,3 euros) y los Países Bajos (441,98 euros). Esto indica que, aunque el salario promedio en España sea más bajo, hay menos variabilidad en los salarios individuales en comparación con estos países. En otras palabras, los salarios en España tienden a agruparse más alrededor del promedio en comparación con Alemania y los Países Bajos.<br><br>
+
+        <strong>Rango Intercuartílico</strong>: El rango intercuartílico, que es la diferencia entre el tercer cuartil (Q3) y el primer cuartil (Q1), es aproximadamente de 201 euros. Esto proporciona una medida de la dispersión de los valores centrales de los datos. Al comparar el rango intercuartílico de España con otros países, se observa que la variabilidad en los salarios mensuales dentro de España tiende a ser menor en comparación con países como los Países Bajos, pero puede ser comparable a países como Portugal y Grecia. Esto sugiere que, aunque los salarios mensuales promedio en España pueden ser más bajos o comparables a otros países europeos, la dispersión de los salarios individuales dentro del país puede variar en comparación.<br><br>
+
+        <strong>Corrimiento Estandarizado</strong>: El corrimiento estandarizado del salario mensual en España es positivo, con un valor aproximado de 1,14. Esto indica que la distribución de los salarios en España está sesgada hacia la derecha, lo que significa que hay una cola larga en el lado derecho de la distribución (salarios más altos que el promedio), como se puede ver en el diagrama de cajas y bigotes 6.3.3 del anexo.<br><br>
+
+        En resumen, al comparar el análisis técnico de los salarios mensuales en España con otros países, se observa que, aunque el salario promedio en España puede ser más bajo que en algunos países europeos, la estabilidad y consistencia en los salarios individuales podría ser relativamente mejor. Sin embargo, todavía existe una proporción significativa de trabajadores con salarios superiores al promedio en España. Todos estos datos se pueden ver con más detalle en la tabla 6.3.2 del anexo.<br><br>
+
+        Artículos que respaldan el análisis:<br><br>
+
+        <a href='https://es.statista.com/grafico/16031/salario-minimo-europa/'>https://es.statista.com/grafico/16031/salario-minimo-europa/</a><br>
+        <a href='https://cincodias.elpais.com/economia/2023-08-21/el-salario-medio-en-espana-es-un-209-mas-bajo-que-el-de-la-ue-segun-adecco.html'>https://cincodias.elpais.com/economia/2023-08-21/el-salario-medio-en-espana-es-un-209-mas-bajo-que-el-de-la-ue-segun-adecco.html</a><br><br>
+    </p>
+    <img src="Picture4.png" class="center">
+        <h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            Figure 6.3.2</h3>
+    <h2>3. Análisis multivariado indice de precios de la vivienda </h2>
+    <p>
+        Para realizar un análisis técnico respecto al índice de cambio de precios de la vivienda en España comparado con otros países, utilizando los datos proporcionados:<br><br>
+
+        <strong>Índice Medio de Cambio de Precios de la Vivienda</strong>: El índice medio de cambio de precios de la vivienda en España es aproximadamente 120 (Figura 6.3.3), lo que indica que los precios de las viviendas han experimentado un aumento promedio del 20.49% desde el valor inicial de 100%, como se puede observar en el gráfico de barras 6.3.5 del anexo.<br><br>
+
+        <strong>Desviación Estándar</strong>: La desviación estándar del índice de cambio de precios de la vivienda en España es aproximadamente de 17.45. Esto muestra la dispersión de los cambios en los precios de las viviendas alrededor del promedio. Una alta desviación estándar indica que los cambios en los precios de las viviendas tienden a variar significativamente.<br><br>
+
+        <strong>Rango Intercuartílico</strong>: El rango intercuartílico, que es la diferencia entre el tercer cuartil (Q3) y el primer cuartil (Q1), es aproximadamente de 27.57. Esto proporciona una medida de la dispersión de los valores centrales de los datos. Los Países Bajos y Portugal tienen rangos intercuartílicos más amplios en el índice de cambio de precios de la vivienda en comparación con España. Esto sugiere que la variabilidad en los cambios de precios de las viviendas dentro de estos países es mayor que en España.<br><br>
+
+        <strong>Corrimiento Estandarizado</strong>: El corrimiento estandarizado del índice de cambio de precios de la vivienda en España es positivo, con un valor aproximado de 0.16. Esto sugiere que la distribución de los cambios en los precios de las viviendas en España está ligeramente sesgada hacia la derecha, aunque en menor medida.<br><br>
+
+        En resumen, España tiene un índice de cambio de precios de la vivienda que indica un aumento promedio desde el valor inicial de 100%. La dispersión de los cambios en los precios de las viviendas es moderada, lo que sugiere cierta variabilidad en los cambios de precios con el tiempo. Además, la distribución de los cambios en los precios de las viviendas en España está ligeramente sesgada hacia la derecha, aunque el sesgo es bastante bajo en comparación con otros países. Todos estos datos se pueden ver con más detalle en la tabla 6.3.4 del anexo.<br><br>
+
+        Artículos que respaldan el análisis:<br><br>
+
+        <a href='https://es.euronews.com/business/2024/03/06/en-que-lugares-de-europa-ha-aumentado-mas-el-precio-de-la-vivienda-desde-2015'>https://es.euronews.com/business/2024/03/06/en-que-lugares-de-europa-ha-aumentado-mas-el-precio-de-la-vivienda-desde-2015</a>
+    </p>
+    <img src="Picture5.png" class="center">
+        <h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            Figure 6.3.3</h3>
+    <h2>4. Tasa de desempleo</h2>
+    <p>
+        El promedio de la tasa de desempleo en España durante el período considerado es del 18.25%. Este es un valor significativamente alto en comparación con otros países europeos (Figura 6.3.4) y sugiere desafíos significativos en el mercado laboral español.<br><br>
+
+        La desviación estándar de 4.98334 indica que hay una considerable variabilidad en la tasa de desempleo. Esto puede ser indicativo de la sensibilidad del mercado laboral español a diferentes factores económicos y políticos.<br><br>
+
+        El rango intercuartílico de 8.85 nos proporciona información sobre la dispersión de los datos centrales. Esto sugiere que la mayoría de las tasas de desempleo se concentran dentro de este rango, pero aún existe una variabilidad significativa en las tasas de desempleo de un año a otro.<br><br>
+
+        Un sesgo estandarizado positivo de 0.651389 indica que la distribución de la tasa de desempleo en España está ligeramente sesgada hacia la derecha. Esto sugiere que puede haber algunos años con tasas de desempleo excepcionalmente altas que influyen ligeramente en el promedio.<br><br>
+
+        En resumen, el análisis técnico de la tasa de desempleo en España muestra que el país enfrenta desafíos significativos en su mercado laboral, con un promedio alto y una considerable variabilidad a lo largo del tiempo. Esto puede requerir políticas y medidas específicas para abordar este problema de desempleo y promover la creación de empleo en el país. Todos estos datos se pueden ver con más detalle en la tabla 6.3.6 del anexo. Artículos que respaldan el análisis en 2024:<br><br>
+        <a href='https://www.larazon.es/economia/espana-sigue-cabeza-paro-europeo-mientras-que-desempleo-eurozona-registra-nivel-mas_2024030165e1de7329d8140001693de2.html'>https://www.larazon.es/economia/espana-sigue-cabeza-paro-europeo-mientras-que-desempleo-eurozona-registra-nivel-mas_2024030165e1de7329d8140001693de2.html</a>
+    </p>
+    <img src="Picture6.png" class="center">
+        <h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            Figure 6.3.4</h3>
+    <h2>5. Tasa de desempleo juvenil </h2>
+    <p>
+        La tasa promedio de desempleo entre los jóvenes en España es del 37.12%, lo que indica una situación preocupante en el mercado laboral para este grupo de edad (Figura 6.3.5). La desviación estándar de 11.9193 sugiere una considerable variabilidad en la tasa de desempleo juvenil a lo largo del tiempo. Sin embargo, el sesgo estandarizado negativo (-0.33887) indica que la distribución de la tasa de desempleo juvenil en España está ligeramente sesgada hacia la izquierda, lo que significa que puede haber años con tasas de desempleo relativamente más bajas en comparación con el promedio.<br><br>
+
+        Grecia e Italia tienen una tasa de desempleo juvenil promedio similar a la de España, aunque relativamente más baja. Su sesgo estandarizado es positivo, lo que indica que ha habido años en los que su promedio ha sido más hacia la derecha, es decir, con una tasa de desempleo más alta para los jóvenes. Los otros países tienen tasas de desempleo juvenil promedio más bajas que España, lo que indica una situación relativamente mejor en el mercado laboral juvenil en estos países. Todos estos datos se pueden ver con más detalle en la tabla 6.3.7 del anexo.<br><br>
+
+        En general, el análisis sugiere que España enfrenta desafíos significativos en términos de desempleo juvenil en comparación con otros países en la muestra. Esto puede requerir políticas y medidas específicas para abordar las causas subyacentes del desempleo juvenil y promover oportunidades de empleo para los jóvenes en España.<br><br>
+
+        Artículo que respalda el análisis:<br><br>
+
+        <a href='https://www.larazon.es/economia/espana-cola-europa-tasa-274-desempleo-juvenil_2023080264ca64c0c4e660000170b659.html'>https://www.larazon.es/economia/espana-cola-europa-tasa-274-desempleo-juvenil_2023080264ca64c0c4e660000170b659.html</a>
+    </p>
+    <img src="Picture7.png" class="center">
+        <h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            Figure 6.3.5</h3>
+    <h2>6.3 herramientas utilizadas</h2>
+    <p>
+        Se han utilizado diferentes herramientas para llevar a cabo este análisis. Al filtrar los datos por país y edad, el sitio web propio de Eurostat ha sido muy útil, y utilizando sus herramientas se seleccionaron los datos necesarios para el proyecto. Una vez seleccionados los datos, se transfirieron a Excel para poder formatearlos de manera adecuada para su correcta lectura en StatGraphics. Finalmente, con los datos ya en StatGraphics, se realizó un análisis univariado sobre España, extrayendo diagramas de caja y de barras, y luego se compararon los resultados de España con el resto de Europa, obteniendo como resultado los histogramas del análisis multivariado.<br><br>
+    </p>
+</body> 
+</html>
